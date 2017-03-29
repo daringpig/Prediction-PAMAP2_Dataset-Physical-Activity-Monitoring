@@ -9,6 +9,7 @@ import numpy as np
 
 
 ####################################### LOAD FILES ###############################################################################################
+#Replace with your path
 subject_1=sc.textFile("/FileStore/tables/vtz73g0n1485007619747/subject101.dat").map(lambda x : (x.split(" "))).filter(lambda x: x[1] != '0')
 subject_2=sc.textFile("/FileStore/tables/xwltpfo71485009157532/subject102.dat").map(lambda x : (x.split(" "))).filter(lambda x: x[1] != '0')
 subject_3=sc.textFile("/FileStore/tables/fb97iysm1485009688052/subject103.dat").map(lambda x : (x.split(" "))).filter(lambda x: x[1] != '0')
